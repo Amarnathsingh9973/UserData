@@ -6,6 +6,10 @@ import { Link } from "react-router-dom";
 
 const Users = () => {
   let [content, setContent] = useState([]);
+  let deleteData = (value) => {
+    axios.delete(`http://localhost:3000/users/${value}`);
+    window.location.assign("/users");
+  };
   useEffect(() => {
     axios
       .get("http://localhost:3000/users")
@@ -45,18 +49,18 @@ const Users = () => {
               </tr>
               <tr>
                 <td>Salary</td>
-                <td>:{x.sal}</td>
+                <td>:{x.sal ? x.sal : "null"}</td>
               </tr>
               <tr>
                 <td>Company</td>
-                <td>:{x.company}</td>
+                <td>:{x.company ? x.company : "null"}</td>
               </tr>
               <tr>
                 <td>
-                  <Link to="/edit">Edit</Link>
+                  <Link to={`/edit/${x.id}`}>Edit</Link>
                 </td>
                 <td>
-                  <button>Delete</button>
+                  <button onClick={()=>{deleteData(x.id)}}>Delete</button>
                 </td>
               </tr>
             </table>

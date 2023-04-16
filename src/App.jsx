@@ -12,7 +12,7 @@ const App = () => {
       <Routes>
         <Route path="/createuser" element={<Createuser />} />
         <Route path="/users" element={<Users />} />
-        <Route path="/edit" element={<Editusers />} />
+        <Route path="/edit/:index" element={<Editusers />} />
       </Routes>
     </BrowserRouter>
   );

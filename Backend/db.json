@@ -1,66 +1,10 @@
 {
   "users": [
     {
-      "id": 1,
-      "name": "amar"
-    },
-    {
-      "id": 2,
-      "name": "saurav"
-    },
-    {
-      "name": "singh",
-      "sal": "78000",
-      "company": "yahoo",
-      "id": 3
-    },
-    {
-      "name": "amar",
-      "sal": "9000",
-      "company": "tcs",
-      "id": 4
-    },
-    {
-      "name": "rahul",
-      "sal": "23000",
-      "company": "ramp",
-      "id": 5
-    },
-    {
-      "name": "rahul",
-      "sal": "23000",
-      "company": "ramp",
-      "id": 6
-    },
-    {
-      "name": "rahul",
-      "sal": "23000",
-      "company": "ramp",
-      "id": 7
-    },
-    {
-      "name": "rahul",
-      "sal": "23000",
-      "company": "ramp",
-      "id": 8
-    },
-    {
-      "name": "ankit",
-      "sal": "45000",
-      "company": "oracle",
-      "id": 9
-    },
-    {
       "name": "",
       "sal": "",
       "company": "",
-      "id": 10
-    },
-    {
-      "name": "",
-      "sal": "",
-      "company": "",
-      "id": 11
+      "id": 2
     }
   ]
 }

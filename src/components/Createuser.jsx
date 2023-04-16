@@ -23,18 +23,19 @@ const Createuser = () => {
     axios.post("http://localhost:3000/users", payload);
     navigate("/users");
   };
+  
   return (
     <div>
       <section id={style.form}>
         <article>
           <label htmlFor="">Name</label>
-          <input type="text" value={name} onChange={nameData} />
+          <input type="text" value={name}  required onChange={nameData} />
           <br />
           <label htmlFor="">Salary</label>
-          <input type="text" value={sal} onChange={salData} />
+          <input type="text" value={sal} onChange={salData} required/>
           <br />
           <label htmlFor="">Company</label>
-          <input type="text" value={company} onChange={companyData} />
+          <input type="text" value={company} onChange={companyData} required/>
           <br />
           <button onClick={formHandler}>Submit</button>
         </article>
