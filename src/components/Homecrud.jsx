@@ -6,7 +6,7 @@ const Homecrud = () => {
   return (
     <section id={style.nav}>
       <Link to="/createuser">Create User</Link>
-      <Link to="/users">User</Link>
+      <Link to="/users">Users</Link>
     </section>
   );
 };
